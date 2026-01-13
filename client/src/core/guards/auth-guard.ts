@@ -9,7 +9,7 @@ export const authGuard: CanActivateFn = () => {
   
   if (accountService.currentUser()) return true;
   else{
-    toast.Error('You Shall not pass');
+    toast.error('You Shall not pass');
     return false;
   }
 };

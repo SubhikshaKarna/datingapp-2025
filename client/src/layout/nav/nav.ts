@@ -23,7 +23,7 @@ export class Nav {
         this.creds={}
       },
       error:error=>{
-        this.toast.Error(error.error);
+        this.toast.error(error.error);
       }
     })
   }
