@@ -36,7 +36,7 @@ public class Seed
                     Id=member.Id,
                     DisplayName=member.DisplayName,
                     Description=member.Description,
-                    DateOfBrith=member.DateOfBrith,
+                    DateOfBirth=member.DateOfBirth,
                     ImageUrl=member.ImageUrl,
                     Gender=member.Gender,
                     City=member.City,

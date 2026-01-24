@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Data.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    [Migration("20260120175521_InitialMigration")]
+    [Migration("20260124175842_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -65,7 +65,7 @@ namespace API.Data.Migrations
                     b.Property<DateTime>("Created")
                         .HasColumnType("TEXT");
 
-                    b.Property<DateOnly>("DateOfBrith")
+                    b.Property<DateOnly>("DateOfBirth")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Description")

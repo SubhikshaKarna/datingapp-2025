@@ -8,7 +8,7 @@ public class Member
 {
     public string Id { get; set;}=null!;
 
-    public DateOnly DateOfBrith { get; set;}
+    public DateOnly DateOfBirth { get; set;}
     public string? ImageUrl { get; set;}
     public required string DisplayName{get; set;}
     public DateTime Created { get; set;}=DateTime.UtcNow;
