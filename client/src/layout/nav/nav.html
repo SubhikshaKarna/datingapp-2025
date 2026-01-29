@@ -34,6 +34,9 @@
       }
       <a routerLink="/errors" routerLinkActive="text-accent">Errors</a>
     </nav>
+    @if (busyService.busyRequestCount() > 0) {
+      <span class="loading loading-spinner text-accent"></span>
+    }
     <div class="flex align-middle ml-auto gap-3">
       <div class="dropdown mr-5 dropdown-end">
         <button
@@ -58,7 +61,7 @@
         </button>
         <ul
           tabindex="1"
-          class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+          class="dropdown-content z-50 menu bg-base-100 rounded-box w-52 p-2 shadow-sm"
         >
           @for (theme of themes; track $index) {
             <li>
@@ -82,7 +85,7 @@
             <span>{{ user.displayName }}</span>
           </div>
           <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-            <li><a>Edit profile</a></li>
+            <li><a routerLink="/members/{{ user.id }}">Edit profile</a></li>
             <li><a href="#" (click)="Logout()">Logout</a></li>
           </ul>
         </div>
