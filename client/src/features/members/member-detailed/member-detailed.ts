@@ -7,16 +7,14 @@ import {
   RouterLinkActive,
   RouterOutlet,
 } from '@angular/router';
-import { AsyncPipe } from '@angular/common';
-import { filter, Observable } from 'rxjs';
-import { Member } from '../../../Types/member';
+import { filter } from 'rxjs';
 import { AgePipe } from '../../../core/pipes/age-pipe';
 import { AccountService } from '../../../core/services/account-service';
 import { MemberService } from '../../../core/services/member-service';
 
 @Component({
   selector: 'app-member-detailed',
-  imports: [AsyncPipe, RouterLink, RouterLinkActive, RouterOutlet, AgePipe],
+  imports: [RouterLink, RouterLinkActive, RouterOutlet, AgePipe],
   templateUrl: './member-detailed.html',
   styleUrl: './member-detailed.css',
 })
