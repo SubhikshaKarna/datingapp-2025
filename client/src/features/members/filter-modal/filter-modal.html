@@ -39,7 +39,7 @@
               type="number"
               class="input w-20"
               [min]="memberParams().minAge || 18"
-              [(ngModel)]="memberParams.maxAge"
+              [(ngModel)]="memberParams().maxAge"
               (change)="onMaxAgeChange()"
             />
           </div>
